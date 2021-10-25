@@ -1,4 +1,6 @@
 # AVA - Communicate with Deaf
+## Live Link:
+[heroku](https://pacific-refuge-24298.herokuapp.com/)
 ## Description
 Deaf have their own language of communication (sign language), they can only understand this language and also they write and read Faster on signwriting. Deaf did not have access to most of the facilities as much as ordinary people, Over 5% of the world's population – or 466 million people – has disabling hearing loss (432 million adults and 34 million children). and The natural language of around 500,000 deaf people in the US and Canada is American Sign Language (ASL). For many people who have been profoundly deaf from a young age, signing is their first language so they learn to read and write English as a second language. As a result, many deaf people have below-average reading abilities for English text and prefer to communicate using sign language A comprehensive approach to the task of enabling humans who cannot sign to communicate with Deaf would clearly require the development of a general-purpose speech to sign language converter. This in turn requires the solution of the following problems:
 
