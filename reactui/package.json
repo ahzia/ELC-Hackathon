@@ -2,6 +2,7 @@
   "name": "reactui",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ahzia.github.io/elc-Hackathon/",
   "dependencies": {
     "@emotion/react": "^11.5.0",
     "@emotion/styled": "^11.3.0",
@@ -12,6 +13,7 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^5.1.3",
+    "gh-pages": "^3.2.3",
     "install": "^0.13.0",
     "npm": "^8.1.1",
     "react": "^17.0.2",
@@ -24,7 +26,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
