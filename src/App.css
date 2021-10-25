@@ -1,0 +1,109 @@
+.app{
+  background: rgb(236,236,241);
+  background: linear-gradient(90deg, rgba(236,236,241,1) 0%, rgba(114,199,179,1) 49%, rgba(190,214,219,1) 100%);
+}
+
+.font-medium {
+  font-size: larger;
+}
+.ssw-one-d {
+  font-family: SuttonSignWritingOneD;
+ }
+ @font-face {
+  font-family: "SuttonSignWritingLine";
+  src: 
+    local('SuttonSignWritingLine'),
+    url('https://cdn.rawgit.com/Slevinski/SuttonSignWriting/master/assets/SuttonSignWritingLine.ttf') format('truetype');
+}
+@font-face {
+  font-family: "SuttonSignWritingFill";
+  src: 
+    local('SuttonSignWritingFill'),
+    url('https://cdn.rawgit.com/Slevinski/SuttonSignWriting/master/assets/SuttonSignWritingFill.ttf') format('truetype');
+}
+@font-face {
+  font-family: "SuttonSignWritingOneD";
+  src: 
+    local('SuttonSignWritingOneD'),
+    url('https://cdn.rawgit.com/Slevinski/SuttonSignWriting/master/assets/SuttonSignWritingOneD.ttf') format('truetype');
+}
+div.signtext {
+  -webkit-writing-mode: vertical-lr;
+  -moz-writing-mode: vertical-lr;
+  -ms-writing-mode: tb-lr;
+  writing-mode: vertical-lr;
+  font-size: 0%;
+  border-left: 1px solid blue;
+  height: 75%;
+  margin-top: 2%;
+}
+
+span.outside {
+  border-left: 1px solid blue;
+  vertical-align: top;
+}
+
+span.middle {
+  vertical-align: bottom;
+}
+
+span.inside {
+  border-left: 1px dashed red;
+}
+
+div.sign {
+  writing-mode: horizontal-tb;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 20px;
+}
+div.sign svg {
+  overflow: visible !important;
+}
+
+  #swu {
+    margin-bottom: 1%;
+  }
+
+  .form-button {
+    font-size:120%;
+    width: 30%;
+    valign: top;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  #swuset{
+    float: right;
+  }
+
+  div.signtext.midnight {
+    background-color: black;
+  }
+  
+  div.signtext.midnight div.sign svg g text.sym-line {
+    fill: white !important;
+  }
+
+  div.signtext.midnight div.sign svg g text.sym-fill {
+    fill: black !important;
+  }
+
+  div.signtext.midnight {
+    border-left: 1px solid yellow;
+  }
+
+  div.signtext.midnight span.outside {
+    border-left: 1px solid yellow;
+  }
+
+  div.signtext.midnight span.inside {
+    border-left: 1px dashed white;
+  }
+
+div.sign:hover svg g text {
+  fill: blue !important;
+}
+div.signtext.midnight div.sign:hover svg g text {
+  fill: yellow !important;
+}
