@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/elc-Hackathon/static/css/main.f9b34770.chunk.css",
+    "main.js": "/elc-Hackathon/static/js/main.6b7bca52.chunk.js",
+    "main.js.map": "/elc-Hackathon/static/js/main.6b7bca52.chunk.js.map",
+    "runtime-main.js": "/elc-Hackathon/static/js/runtime-main.ea1d6d56.js",
+    "runtime-main.js.map": "/elc-Hackathon/static/js/runtime-main.ea1d6d56.js.map",
+    "static/css/2.0a9ec390.chunk.css": "/elc-Hackathon/static/css/2.0a9ec390.chunk.css",
+    "static/js/2.07b02acd.chunk.js": "/elc-Hackathon/static/js/2.07b02acd.chunk.js",
+    "static/js/2.07b02acd.chunk.js.map": "/elc-Hackathon/static/js/2.07b02acd.chunk.js.map",
+    "static/js/3.12112917.chunk.js": "/elc-Hackathon/static/js/3.12112917.chunk.js",
+    "static/js/3.12112917.chunk.js.map": "/elc-Hackathon/static/js/3.12112917.chunk.js.map",
+    "index.html": "/elc-Hackathon/index.html",
+    "static/css/2.0a9ec390.chunk.css.map": "/elc-Hackathon/static/css/2.0a9ec390.chunk.css.map",
+    "static/css/main.f9b34770.chunk.css.map": "/elc-Hackathon/static/css/main.f9b34770.chunk.css.map",
+    "static/js/2.07b02acd.chunk.js.LICENSE.txt": "/elc-Hackathon/static/js/2.07b02acd.chunk.js.LICENSE.txt",
+    "static/media/data.3ea43089.txt": "/elc-Hackathon/static/media/data.3ea43089.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ea1d6d56.js",
+    "static/css/2.0a9ec390.chunk.css",
+    "static/js/2.07b02acd.chunk.js",
+    "static/css/main.f9b34770.chunk.css",
+    "static/js/main.6b7bca52.chunk.js"
+  ]
+}
