@@ -1,36 +1,40 @@
 import { useState } from 'react';
 import './App.css';
 import Translate from './components/Translate';
-import fetchData from './functions/fetch';
 import findClosest from './functions/findClosest';
+import swuChange from './functions/towd';
 
 function App() {
-  const [result, setResult] = useState([]);
   const [translated, setTranslated] = useState('');
-  fetchData().then(res => {
-    setResult(res);
-  });
-  const translate = (text) => {
+  const [towd, setTowd] = useState('');
+  const [resultEnglish, setResultEnglish] = useState('');
+
+  const translateToSignWriting = async (text) => {
     if(text === ''){
       setTranslated('Please Type the text');
     }
     else{
-      const index = findClosest(text, result);
-        if(index === -1){
-          setTranslated('Our Data Set is limited, we could not found the sentence you want');
+      const result = await findClosest(text);
+        if(result === 'not found'){
+          setTranslated('Our Data Set is limited,for now we could not found the sentence you want');
         }
         else{
-          setTranslated(result[index][0]);
+          setTranslated(result[0]);
+          const td = swuChange(result[0]);
+          setTowd(td);
+          setResultEnglish(result[1]);
         }
   }
   }
-  if(result === []){
-    <p>Waiting</p>
-  }
+
   return (
-    <div>
-      <Translate translate={translate}/>
-      <p>{translated}</p>
+    <div className="p-3 d-flex flex-column justify-content-center align-items-center app">
+      <h3 className="m-3">English to Sign Writing Translator</h3>
+      <Translate translate={translateToSignWriting}/>
+      <p className="m-3 font-medium " >The 1D (Formal Sign writing) Translation for word "{resultEnglish}" :</p>
+      <p className="ssw-one-d font-medium ">{translated}</p>
+      <p>The 2D Format:</p>
+      <div className="signtext" dangerouslySetInnerHTML={{__html: towd}}></div>
     </div>
   );
   

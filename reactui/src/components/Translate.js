@@ -1,30 +1,35 @@
 import {useState} from 'react';
-import Button from '@mui/material/Button';
+import LoadingButton from '@mui/lab/LoadingButton';
 import MaterialTextField from '@mui/material/TextField';
 
 
 const Translate = ({translate}) => {
   const [value, setValue] = useState('');
+  const [loading, setLoading] = useState(false);
   
   const handleChange = (event) => {
     setValue(event.target.value);
   };
 
   const handleClick = () => {
-    translate(value);
+    setLoading(true);
+    translate(value).then(() => {
+      setLoading(false);
+    });
   }
   
   return (
-    <div>
+    <div className="d-flex flex-column align-items-center">
       <MaterialTextField
       id="outlined-textarea"
-      label="Multiline Placeholder"
+      label="English Text"
       placeholder="English Text"
       multiline
       value={value}
       onChange={handleChange}
     />
-      <Button variant="contained" onClick = {handleClick} >Contained</Button>
+    <br />
+    <LoadingButton variant="contained" loading={loading} onClick ={handleClick} >Translate</LoadingButton>
     </div>
 
   );
