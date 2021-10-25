@@ -40,4 +40,4 @@ Easy to hear First of all, we will improve our data set, our plan is to create a
   3) Display of this representation as a sequence of Signs using computer graphics techniques. (a sign Avatar) The system will get the text/speech from a smartphone, convert it to        sign language using machine translation, and represent the signs using a 3D character.
 
 ## Demo
-[![Watch the video](https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)](https://www.youtube.com/embed/zHn95iAsg2Y)
+[![Watch the video](https://img.youtube.com/vi/zHn95iAsg2Y/maxresdefault.jpg)](https://www.youtube.com/embed/zHn95iAsg2Y)
