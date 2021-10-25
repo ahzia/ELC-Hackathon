@@ -1,0 +1,2 @@
+donload the data from kaggle by searching glove.6B.300d.txt 
+and save it in this folder
