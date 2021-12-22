@@ -1,4 +1,7 @@
-# AVA - Communicate with Deaf
+# AVA - Communicate with Dea
+
+This Project was developed for ELC Hackthon 2021, An AI System to aid communication with Deaf.
+
 ## Live Link:
 [heroku](https://pacific-refuge-24298.herokuapp.com/)
 
